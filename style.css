@@ -1,0 +1,348 @@
+ *{
+    margin: 0;
+    padding: 0;
+ }
+ header{
+    width: 100%;
+    display: flex;
+    height: 100px;
+    background: #f6f9f9;
+    align-items: center;
+ }
+ header .logo {
+    width: 50%;
+    margin-left: 8%;
+    cursor: pointer;
+ }
+
+ header ul{
+    list-style: none;
+    display: flex;
+    
+ }
+ header ul li{
+    margin-left: 13%;
+
+ }
+
+ header ul li a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+ }
+ .banner{
+    background-image: url(./pic/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 700px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+ }
+ .banner .text h1{
+    font-size: 70px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    margin-bottom: 20px;
+ }
+ .text span {
+	width: 107%;
+	background: #15a4fa;
+	height: 1px;
+	display: block;
+	margin-left: -19px;
+}
+.text p{
+    color: #ffffff;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    margin-top: 20px;
+}
+.text button{
+    background: transparent;
+    border: 1px solid #15a4fa;
+    padding: 10px 20px;
+    margin-top: 40px;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+   cursor: pointer;
+   transition: .5s;
+}
+.text button:hover{
+   background: white;
+   color: #15a4fa;
+   border: 1px solid white;
+}
+
+ .body {
+   text-align: center;
+   background: #f6f9f9;
+   height: 200px;
+}
+
+ .body h1{
+   font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    padding: 40px 0px 20px;
+
+ }
+ .body p {
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+   font-size: 14px;
+   color: #999999;
+}
+main{
+   padding: 70px 0 0;
+   height: 200px;
+}
+
+ main .all{
+   display: flex;
+   justify-content: space-between;
+   width: 80%;
+   margin: auto;
+}
+.phn{
+   width: 30%;
+   text-align: center;
+}
+main .logo{
+   height: 50px;
+   width: 50px;
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#7db9e8+0,48baff+0,2989d8+50,5fc3ff+50 */
+background: linear-gradient(to right,  rgba(125,185,232,1) 0%,rgba(72,186,255,1) 0%,rgba(41,137,216,1) 50%,rgb(64, 160, 219) 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   position: relative;
+   margin-left: 42%;
+}
+main .logo i{
+   color: #ffffff;
+   font-size: 25px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+}
+main  h4{
+   font-family: 'Lato', sans-serif;
+	font-weight: 400;
+   color: #2d3950;
+   padding: 16px 0;
+}
+main  p{
+   font-family: 'Lato', sans-serif;
+	font-weight: 400;
+   color: #999999;
+}
+.image{
+   background: #f6f9f9;
+   height: 800px;
+}
+.artical{
+   text-align: center;
+
+}
+.image h2{
+    font-family: 'Lato', sans-serif;
+	font-weight: 400;
+   font-size: 35px;
+   padding: 40px 0px 15px;
+   color: #253247;
+}
+.image p{
+   font-family: 'Lato', sans-serif;
+	font-weight: 400;
+   color: #999999;
+   margin-bottom: 5%;
+}
+.photo{
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   width: 80%;
+   margin: auto;
+}
+.pic img{
+   width: 100%;
+}
+
+.photo .pic{
+   width: 30%;
+   margin-bottom: 20px;
+   position: relative;
+}
+.pic::after{
+   content:"";
+   height: 100%;
+   width: 0%;
+   position: absolute;
+   right: 0;
+   top: 0;
+   background: #1b66f1;
+   opacity: 0;
+   transition: 1s;
+}
+.pic:hover::after{
+   opacity: .5;
+   width: 100%;
+}
+.baner{
+   background-image:url(./Pic/banner2.png);
+   height: 650px;
+   background-position: center center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   position: relative;
+   z-index: 1;
+   text-align: center;
+}
+.baner::after{
+   content:"";
+   height: 100%;
+   width: 100%;
+   position: absolute;
+   left: 0;
+   top: 0;
+   background: #2b364a;
+   opacity: .8;
+   transition: 1s;   
+   z-index: -1;
+}
+.baner h1{
+   color: #ffffff;
+   font-size: 45px;
+   font-family: 'Lato', sans-serif;
+	font-weight: 400;
+   padding: 50px 0px 15px;
+}
+.baner p{
+   color: #999999;
+   font-family: 'Lato', sans-serif;
+	font-weight: 400;
+   padding-bottom: 50px;
+}
+form input{
+   width: 500px;
+   margin-bottom: 15px;
+   padding: 10px 5px;
+   background: transparent;
+   border: 1px solid #999999;
+   border-radius: 3px;
+}
+input:focus{
+   outline: none;
+}
+input::placeholder{
+   color: #ffffff;
+   font-family: 'Lato', sans-serif;
+	font-weight: 400;
+}
+textarea::placeholder{
+   color: #ffffff;
+   font-family: 'Lato', sans-serif;
+	font-weight: 400;
+}
+textarea{
+   width: 500px;
+   margin-bottom: 15px;
+   padding: 10px 5px;
+   background: transparent;
+   border: 1px solid #7a7979;
+   border-radius: 3px;
+}
+textarea:focus{
+   outline: none;
+}
+input [type="checkbox"] {
+   background: #000;
+   color: red;
+   margin-left: -50px;
+}
+/* .sub {
+	color: #ffffff;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+   transform: translate(50px,50px);
+} */
+.send {
+	margin-left: 31%;
+	display: block;
+}
+.send button {
+	padding: 10px 35px;
+	background: transparent;
+	border: 1px solid #15a4fa;
+	border-radius: 3px;
+	cursor: pointer;
+	color: white;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	transition: .5s;
+	margin: 3% 0% 0% 23%;
+	display: block;
+}
+.send button:hover{
+   background: white;
+   color: #15a4fa;
+   border: 1px solid white;
+  
+}
+footer{
+   background: #f0f0f0;
+   height: 80px;
+
+}
+
+
+.last ul{
+   list-style: none;
+   display: flex;
+   width: 26%;
+   justify-content: end;
+   align-items: center;
+
+   
+}
+.last ul li{
+margin-top: 10%;
+}
+.last ul li a{
+   text-decoration: none;
+   margin-right: 20px;
+   color: #3d3d3d;
+}
+.icon {
+	display: flex;
+	justify-content: end;
+	width: 85%;
+	margin-top: -25px;
+}
+.icon ul{
+   list-style: none;
+   display: flex;
+
+
+}
+.icon ul li{
+   color: #f0f0f0;
+   height: 35px ;
+   width: 35px;
+   background: #15a4fa;
+   margin-left: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
+   
+}
+.icon ul li a {
+   color: #ffffff;
+   font-size: 15px;
+   
+}
